@@ -1,5 +1,5 @@
 function list() {
     var name = document.getElementById("name").value;
-    document.body.innerHTML = name;
+    document.getElementById("myInput").innerHTML = name;
 }
 

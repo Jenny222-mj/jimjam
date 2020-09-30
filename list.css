@@ -1,0 +1,25 @@
+html, body {
+    background-color: rgb(238, 39, 39);
+}
+p {
+    text-align: center;
+    font: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-content: center;
+    margin: auto;
+}
+input {
+    padding: 3px;
+    border-color: black;
+}
+button {
+    background-color: black;
+    color: white;
+    font-size: 10px;
+}
