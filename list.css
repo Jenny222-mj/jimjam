@@ -7,7 +7,7 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 70px;
 }
-form {
+#one {
     display: flex;
     justify-content: center;
     z-index: 1;
