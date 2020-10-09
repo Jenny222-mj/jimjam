@@ -5,11 +5,12 @@ function genId() {
 }
 function list() {
     var name = document.getElementById("name").value;
+    if(name)
     document.getElementById("todos").innerHTML +=
      `<li id ="item ${genId()}">
-        <input type="checkbox" name="" id="">
-        <span>${name}</span>
-        <button id = "" onclick ="del('item ${number}')">Delete</button>
+        <input type= "checkbox" id="check ${number}" onclick ="underline('item ${number}', 'check  ${number})">
+        <span id='checkbox ${number}'> ${name}</span>
+        <button id = "" class = "two" onclick ="del('item ${number}')">Delete</button>
     </li>` 
     // var node = document.createElement("Li");
     // var textnode = createTextNode("cooking");
@@ -18,5 +19,14 @@ function list() {
 }
 function del(item){
     document.getElementById(item).innerHTML = ""
+}
+function underline(checkbox, check) {
+    let thisBox = document.getElementById(check)
+    if (thisBox.checked == true) {
+        document.getElementById(checkbox).style.textDecoration = "line-through"
+    }
+    else
+    {
+    document.getElementById(checkbox).style.textDecoration = "none"
 }
 
